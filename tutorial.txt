@@ -1,0 +1,18 @@
+C:\Users\houzh\myworld>
+package manager -- pip
+virtual environment -- venv
+Scripts\activate.bat -- setup venv
+django-admin --version
+python manage.py makemigrations members 
+python manage.py migrate
+python manage.py sqlmigrate members 0001
+python manage.py shell
+Member.objects.all().values()
+python manage.py runserver
+
+x= Member.objects.all()[1]
+x.firstname = 'Charlotte'
+x.lastname = 'Cardin'
+x.save()
+
+ 
